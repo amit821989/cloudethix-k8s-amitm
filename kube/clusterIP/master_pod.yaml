@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: master-nginx
+  labels:
+    app: master-nginx
+spec:
+  containers:
+  - name: nginx
+    image: aameett/cloudethix_master_nginx_amitm:v1
+    ports:
+    - containerPort: 80
